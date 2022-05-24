@@ -132,7 +132,7 @@
     }
   </style>
   <link rel="icon" type="image/png" href="images/limin-icon.jpg">
-  <title>Limin Yang, Security PhD Student at UIUC</title>
+  <title>Chuang Zhao, Security Master Student at TJU</title>
   <meta name="description" content="I am a second-year Ph.D. student of Computer Science at UIUC, working with Prof. Gang Wang. I focus on machine learning security, measurement, and explainable AI.">
   <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -156,7 +156,7 @@
               <p class="footer" style="font-size: 15px;">Photo credit: <a href="https://www.haileyliu.photos/" target="_blank" style="font-size: 15px"> Hailey Liu</a>  </p>
               <p align=left>
                 <!-- <a href="data/Resume_LiminYang.pdf">Resume</a> &nbsp;/&nbsp; -->
-                <a href="data/CV_LiminYang_UIUC.pdf"> <i class="ai ai-cv-square ai-2x"></i> </a> &nbsp;
+                <a href="data/Chuang Zhao_tju.pdf"> <i class="ai ai-cv-square ai-2x"></i> </a> &nbsp;
                 <a href="https://github.com/Data-Designer"> <i class="fa fa-github-square fa-2x"></i> </a> &nbsp;
                 <a href="https://scholar.google.com/citations?user=YYMcwZAAAAAJ&hl=en"> <i class="ai ai-google-scholar-square ai-2x"></i> </a> &nbsp;
                 <a href="https://www.linkedin.com/in/%E9%97%AF-%E8%B5%B5-22412813a/"> <i class="fa fa-linkedin-square fa-2x"></i> </a> &nbsp;
@@ -167,7 +167,7 @@
                 <name>Chuang Zhao &nbsp; (赵闯) </name>
               </p>
               <p class="introduction">
-                I am a Master. student of Management Science and Engineering at <a href="https://illinois.edu">Tianjin University</a> since 09/2020. <br>
+                I am a Master. student of Management Science and Engineering at <a href="http://www.tju.edu.cn/">Tianjin University</a> since 09/2020. <br>
                 I focus on <em class="highlight">Data Mining, Transfer Learning, and Recommendation System. </em> <br>
                 My advisor is <a href="http://come.tju.edu.cn/info/1089/3759.htm">Prof. Hongke Zhao</a>. <br>
                 I also work closely with <a href="https://eller.arizona.edu/people/yong-ge">Prof. Yong Ge</a> from Arizona.
@@ -260,7 +260,7 @@
             <td valign="center">
                 <papertitle>Winning Tracker: A New Model for Real-time Winning Prediction in MOBA Games</papertitle> <br>
                 <span class="underline">Chuang Zhao</span>, Hongke Zhao, Yong Ge, Runze Wu, Xudong Shen<br>
-                <a href="data/USENIX21_CADE.pdf">PDF</a> /
+                <a href="data/WWW2022_WT.pdf">PDF</a> /
                 <a href="data/USENIX_21_CADE_Supplementary_Materials.pdf">Supplementary PDF</a> /
                 <a href="https://github.com/whyisyoung/CADE">Code</a> /
                 <span class="artifact">Artifact Evaluated</span> <br>
