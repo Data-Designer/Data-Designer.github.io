@@ -1,0 +1,2350 @@
+{
+  "schema": "agentinputlab.website.paper-aggregates.v1",
+  "snapshot_date": "2026-11-19",
+  "paper_title": "To Optimize or Not to Optimize: When Input Optimization Helps and Hurts LLM Agents",
+  "source_table": "Current manuscript main results",
+  "source_table_sha256": "3a0538c54567afe8543daf69628789775b3a9b93b4a6b2fe606339d1929584ad",
+  "score_scale": "percent",
+  "arenas": [
+    {
+      "id": "statebench",
+      "name": "STATE-Bench"
+    },
+    {
+      "id": "toolsandbox",
+      "name": "ToolSandbox"
+    },
+    {
+      "id": "tooltalk",
+      "name": "ToolTalk"
+    }
+  ],
+  "models": [
+    {
+      "id": "Q4",
+      "name": "Qwen3-4B"
+    },
+    {
+      "id": "G12",
+      "name": "Gemma4-12B"
+    },
+    {
+      "id": "O20",
+      "name": "GPT-OSS-20B"
+    },
+    {
+      "id": "Q27",
+      "name": "Qwen3.8-27B"
+    },
+    {
+      "id": "DS",
+      "name": "DeepSeek-V4.1-flash (10-17)"
+    }
+  ],
+  "rows": [
+    {
+      "name": "OPT0",
+      "family": "B",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 4.0,
+          "valid": 4.0
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 11.0,
+          "valid": 11.0
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 7.3,
+          "valid": 7.3
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 12.3,
+          "valid": 12.3
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 13.0,
+          "valid": 13.0
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 22.4,
+          "valid": 22.4
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 25.9,
+          "valid": 25.9
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 19.7,
+          "valid": 19.7
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 22.1,
+          "valid": 22.1
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 63.1,
+          "valid": 63.1
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 28.2,
+          "valid": 28.2
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 37.2,
+          "valid": 37.2
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 38.5,
+          "valid": 38.5
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 39.7,
+          "valid": 39.7
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 42.3,
+          "valid": 42.3
+        }
+      ]
+    },
+    {
+      "name": "InfoCQR",
+      "family": "R",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 12.0,
+          "valid": 12.0
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 29.0,
+          "valid": 29.0
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 22.0,
+          "valid": 21.3
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 30.7,
+          "valid": 30.7
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 38.7,
+          "valid": 38.7
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 21.5,
+          "valid": 21.5
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 26.2,
+          "valid": 26.2
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 14.9,
+          "valid": 14.5
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 25.9,
+          "valid": 25.9
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 70.7,
+          "valid": 70.7
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 28.2,
+          "valid": 28.2
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 52.6,
+          "valid": 52.6
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 50.0,
+          "valid": 48.7
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 46.2,
+          "valid": 46.2
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 56.4,
+          "valid": 56.4
+        }
+      ]
+    },
+    {
+      "name": "Query2doc",
+      "family": "R",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 14.3,
+          "valid": 14.3
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 26.0,
+          "valid": 26.0
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 22.7,
+          "valid": 22.7
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 29.0,
+          "valid": 29.0
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 39.3,
+          "valid": 39.3
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 20.7,
+          "valid": 20.7
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 27.6,
+          "valid": 27.6
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 14.2,
+          "valid": 14.2
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 26.1,
+          "valid": 26.1
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 74.5,
+          "valid": 74.5
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 23.1,
+          "valid": 23.1
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 52.6,
+          "valid": 52.6
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 50.0,
+          "valid": 50.0
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 56.4,
+          "valid": 56.4
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 60.3,
+          "valid": 60.3
+        }
+      ]
+    },
+    {
+      "name": "RRR",
+      "family": "R",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 13.0,
+          "valid": 12.7
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 25.3,
+          "valid": 25.3
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 20.7,
+          "valid": 19.7
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 30.3,
+          "valid": 30.3
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 37.3,
+          "valid": 36.0
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 19.2,
+          "valid": 19.2
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 24.8,
+          "valid": 24.8
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 22.1,
+          "valid": 18.0
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 23.6,
+          "valid": 23.6
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 66.1,
+          "valid": 66.1
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 24.4,
+          "valid": 24.4
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 37.2,
+          "valid": 37.2
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 35.9,
+          "valid": 26.9
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 37.2,
+          "valid": 37.2
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 34.6,
+          "valid": 34.6
+        }
+      ]
+    },
+    {
+      "name": "ReFormeR",
+      "family": "R",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 10.3,
+          "valid": 10.3
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 20.3,
+          "valid": 20.3
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 15.3,
+          "valid": 8.0
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 25.0,
+          "valid": 25.0
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 30.0,
+          "valid": 30.0
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 20.7,
+          "valid": 18.2
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 27.4,
+          "valid": 27.4
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 23.4,
+          "valid": 14.4
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 25.1,
+          "valid": 25.1
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 72.7,
+          "valid": 72.7
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 26.9,
+          "valid": 26.9
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 50.0,
+          "valid": 50.0
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 38.5,
+          "valid": 23.1
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 48.7,
+          "valid": 48.7
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 55.1,
+          "valid": 55.1
+        }
+      ]
+    },
+    {
+      "name": "Plan-and-Solve",
+      "family": "D",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 13.0,
+          "valid": 13.0
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 32.7,
+          "valid": 32.7
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 23.3,
+          "valid": 23.3
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 30.3,
+          "valid": 30.3
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 43.0,
+          "valid": 43.0
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 20.7,
+          "valid": 20.7
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 24.1,
+          "valid": 24.1
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 12.0,
+          "valid": 12.0
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 23.2,
+          "valid": 23.2
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 74.6,
+          "valid": 74.6
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 33.3,
+          "valid": 33.3
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 57.7,
+          "valid": 57.7
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 44.9,
+          "valid": 44.9
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 60.3,
+          "valid": 60.3
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 66.7,
+          "valid": 66.7
+        }
+      ]
+    },
+    {
+      "name": "Decomp",
+      "family": "D",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 10.7,
+          "valid": 5.3
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 14.7,
+          "valid": 13.3
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 18.7,
+          "valid": 10.7
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 12.3,
+          "valid": 10.3
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 27.0,
+          "valid": 27.0
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 20.7,
+          "valid": 14.2
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 24.7,
+          "valid": 7.4
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 24.9,
+          "valid": 12.4
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 24.3,
+          "valid": 15.7
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 69.2,
+          "valid": 67.3
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 30.8,
+          "valid": 15.4
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 43.6,
+          "valid": 17.9
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 42.3,
+          "valid": 6.4
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 37.2,
+          "valid": 20.5
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 47.4,
+          "valid": 47.4
+        }
+      ]
+    },
+    {
+      "name": "Self-Ask",
+      "family": "D",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 10.3,
+          "valid": 10.0
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 14.7,
+          "valid": 14.7
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 16.3,
+          "valid": 4.3
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 25.0,
+          "valid": 25.0
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 14.7,
+          "valid": 14.7
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 19.2,
+          "valid": 19.2
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 25.1,
+          "valid": 16.2
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 13.1,
+          "valid": 8.5
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 23.9,
+          "valid": 23.9
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 64.8,
+          "valid": 64.8
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 20.5,
+          "valid": 20.5
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 34.6,
+          "valid": 34.6
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 34.6,
+          "valid": 19.2
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 52.6,
+          "valid": 52.6
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 38.5,
+          "valid": 38.5
+        }
+      ]
+    },
+    {
+      "name": "LLMCompiler",
+      "family": "D",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 13.0,
+          "valid": 13.0
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 28.3,
+          "valid": 28.3
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 17.3,
+          "valid": 1.3
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 29.3,
+          "valid": 28.7
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 38.7,
+          "valid": 38.7
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 16.1,
+          "valid": 15.6
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 25.5,
+          "valid": 20.8
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 23.7,
+          "valid": 3.1
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 22.3,
+          "valid": 20.7
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 72.4,
+          "valid": 69.3
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 28.2,
+          "valid": 21.8
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 52.6,
+          "valid": 52.6
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 48.7,
+          "valid": 21.8
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 47.4,
+          "valid": 42.3
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 53.8,
+          "valid": 53.8
+        }
+      ]
+    },
+    {
+      "name": "Plan-and-Budget",
+      "family": "D",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 12.3,
+          "valid": 12.3
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 19.7,
+          "valid": 19.7
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 12.3,
+          "valid": 11.0
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 25.0,
+          "valid": 25.0
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 33.0,
+          "valid": 33.0
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 19.2,
+          "valid": 17.6
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 24.6,
+          "valid": 24.6
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 13.6,
+          "valid": 13.4
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 24.7,
+          "valid": 24.7
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 73.6,
+          "valid": 73.6
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 30.8,
+          "valid": 30.8
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 51.3,
+          "valid": 51.3
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 38.5,
+          "valid": 37.2
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 50.0,
+          "valid": 50.0
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 50.0,
+          "valid": 50.0
+        }
+      ]
+    },
+    {
+      "name": "Q-RAG",
+      "family": "A",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 13.7,
+          "valid": 13.7
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 35.0,
+          "valid": 35.0
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 26.0,
+          "valid": 26.0
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 35.3,
+          "valid": 35.3
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 49.7,
+          "valid": 49.7
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 17.6,
+          "valid": 17.6
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 23.1,
+          "valid": 23.1
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 8.9,
+          "valid": 8.9
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 22.1,
+          "valid": 22.1
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 69.9,
+          "valid": 69.9
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 30.8,
+          "valid": 30.8
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 59.0,
+          "valid": 59.0
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 51.3,
+          "valid": 51.3
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 48.7,
+          "valid": 48.7
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 65.4,
+          "valid": 65.4
+        }
+      ]
+    },
+    {
+      "name": "IRCoT",
+      "family": "A",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 14.3,
+          "valid": 14.3
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 14.7,
+          "valid": 14.7
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 18.3,
+          "valid": 11.0
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 15.7,
+          "valid": 15.7
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 22.0,
+          "valid": 22.0
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 19.2,
+          "valid": 19.2
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 22.8,
+          "valid": 12.2
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 23.5,
+          "valid": 6.2
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 23.5,
+          "valid": 23.5
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 58.7,
+          "valid": 58.7
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 24.4,
+          "valid": 24.4
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 38.5,
+          "valid": 38.5
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 38.5,
+          "valid": 24.4
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 38.5,
+          "valid": 38.5
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 44.9,
+          "valid": 44.9
+        }
+      ]
+    },
+    {
+      "name": "Adaptive-RAG",
+      "family": "A",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 15.0,
+          "valid": 15.0
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 30.0,
+          "valid": 30.0
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 27.0,
+          "valid": 25.7
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 33.0,
+          "valid": 33.0
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 44.3,
+          "valid": 44.3
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 18.4,
+          "valid": 18.4
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 22.8,
+          "valid": 21.2
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 13.4,
+          "valid": 10.9
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 21.8,
+          "valid": 21.8
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 66.9,
+          "valid": 66.9
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 26.9,
+          "valid": 26.9
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 56.4,
+          "valid": 56.4
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 48.7,
+          "valid": 48.7
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 53.8,
+          "valid": 53.8
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 62.8,
+          "valid": 62.8
+        }
+      ]
+    },
+    {
+      "name": "R²AG",
+      "family": "A",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 13.7,
+          "valid": 10.7
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 27.3,
+          "valid": 21.3
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 22.0,
+          "valid": 17.3
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 31.3,
+          "valid": 26.0
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 47.0,
+          "valid": 41.7
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 18.4,
+          "valid": 18.4
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 22.1,
+          "valid": 18.8
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 11.3,
+          "valid": 11.3
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 23.3,
+          "valid": 23.3
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 66.6,
+          "valid": 66.6
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 35.9,
+          "valid": 35.9
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 59.0,
+          "valid": 57.7
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 47.4,
+          "valid": 47.4
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 55.1,
+          "valid": 55.1
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 62.8,
+          "valid": 62.8
+        }
+      ]
+    },
+    {
+      "name": "Ask or Assume?",
+      "family": "C",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 14.7,
+          "valid": 4.0
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 29.7,
+          "valid": 29.7
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 17.3,
+          "valid": 13.7
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 29.3,
+          "valid": 17.7
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 40.7,
+          "valid": 40.3
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 22.6,
+          "valid": 17.1
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 26.0,
+          "valid": 26.0
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 13.5,
+          "valid": 13.5
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 24.5,
+          "valid": 11.0
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 75.9,
+          "valid": 74.5
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 29.5,
+          "valid": 25.6
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 48.7,
+          "valid": 46.2
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 34.6,
+          "valid": 34.6
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 57.7,
+          "valid": 42.3
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 53.8,
+          "valid": 53.8
+        }
+      ]
+    },
+    {
+      "name": "UDCS",
+      "family": "C",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 13.7,
+          "valid": 13.7
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 30.0,
+          "valid": 30.0
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 21.0,
+          "valid": 10.7
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 30.3,
+          "valid": 7.0
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 42.7,
+          "valid": 42.0
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 24.6,
+          "valid": 24.6
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 27.0,
+          "valid": 27.0
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 11.6,
+          "valid": 9.8
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 25.2,
+          "valid": 6.2
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 74.5,
+          "valid": 72.4
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 19.2,
+          "valid": 19.2
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 60.3,
+          "valid": 60.3
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 41.0,
+          "valid": 39.7
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 57.7,
+          "valid": 30.8
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 56.4,
+          "valid": 56.4
+        }
+      ]
+    },
+    {
+      "name": "ATD",
+      "family": "C",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 11.7,
+          "valid": 11.7
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 7.7,
+          "valid": 7.7
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 2.7,
+          "valid": 2.7
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 31.0,
+          "valid": 31.0
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 36.7,
+          "valid": 36.7
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 25.9,
+          "valid": 25.9
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 7.7,
+          "valid": 7.7
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 11.2,
+          "valid": 11.2
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 20.4,
+          "valid": 20.4
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 69.8,
+          "valid": 69.8
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 12.8,
+          "valid": 12.8
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 1.3,
+          "valid": 1.3
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 6.4,
+          "valid": 6.4
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 12.8,
+          "valid": 12.8
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 17.9,
+          "valid": 17.9
+        }
+      ]
+    },
+    {
+      "name": "SkillOpt",
+      "family": "U",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 12.7,
+          "valid": 12.7
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 32.0,
+          "valid": 32.0
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 23.3,
+          "valid": 23.3
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 32.7,
+          "valid": 32.7
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 47.3,
+          "valid": 47.3
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 20.0,
+          "valid": 20.0
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 26.0,
+          "valid": 26.0
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 13.3,
+          "valid": 13.3
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 25.1,
+          "valid": 25.1
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 77.6,
+          "valid": 77.6
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 30.8,
+          "valid": 30.8
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 59.0,
+          "valid": 59.0
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 50.0,
+          "valid": 50.0
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 60.3,
+          "valid": 60.3
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 70.5,
+          "valid": 70.5
+        }
+      ]
+    },
+    {
+      "name": "LongLLMLingua",
+      "family": "U",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 12.3,
+          "valid": 12.3
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 32.0,
+          "valid": 32.0
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 21.3,
+          "valid": 21.3
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 32.7,
+          "valid": 32.7
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 45.7,
+          "valid": 45.7
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 20.7,
+          "valid": 20.7
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 25.3,
+          "valid": 25.3
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 10.6,
+          "valid": 10.6
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 24.5,
+          "valid": 24.5
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 73.0,
+          "valid": 73.0
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 26.9,
+          "valid": 26.9
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 61.5,
+          "valid": 61.5
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 46.2,
+          "valid": 46.2
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 50.0,
+          "valid": 50.0
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 60.3,
+          "valid": 60.3
+        }
+      ]
+    },
+    {
+      "name": "LLMLingua-2",
+      "family": "U",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 12.3,
+          "valid": 12.3
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 35.0,
+          "valid": 35.0
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 23.7,
+          "valid": 23.7
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 33.3,
+          "valid": 33.3
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 40.0,
+          "valid": 40.0
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 21.5,
+          "valid": 21.5
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 26.5,
+          "valid": 26.5
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 12.0,
+          "valid": 12.0
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 25.1,
+          "valid": 25.1
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 72.9,
+          "valid": 72.9
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 30.8,
+          "valid": 30.8
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 60.3,
+          "valid": 60.3
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 47.4,
+          "valid": 47.4
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 56.4,
+          "valid": 56.4
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 61.5,
+          "valid": 61.5
+        }
+      ]
+    },
+    {
+      "name": "RECOMP",
+      "family": "U",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 11.7,
+          "valid": 11.7
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 31.7,
+          "valid": 31.7
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 23.0,
+          "valid": 23.0
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 28.0,
+          "valid": 28.0
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 41.7,
+          "valid": 41.7
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 20.7,
+          "valid": 20.7
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 26.3,
+          "valid": 26.3
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 23.0,
+          "valid": 23.0
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 24.7,
+          "valid": 24.7
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 74.0,
+          "valid": 74.0
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 29.5,
+          "valid": 29.5
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 55.1,
+          "valid": 55.1
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 46.2,
+          "valid": 46.2
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 52.6,
+          "valid": 52.6
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 61.5,
+          "valid": 61.5
+        }
+      ]
+    },
+    {
+      "name": "ACON",
+      "family": "U",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 14.3,
+          "valid": 14.3
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 27.7,
+          "valid": 27.7
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 20.7,
+          "valid": 20.7
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 28.3,
+          "valid": 28.3
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 41.0,
+          "valid": 41.0
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 20.7,
+          "valid": 20.7
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 26.9,
+          "valid": 26.9
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 14.1,
+          "valid": 13.5
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 24.6,
+          "valid": 24.6
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 77.7,
+          "valid": 77.7
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 28.2,
+          "valid": 28.2
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 61.5,
+          "valid": 61.5
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 50.0,
+          "valid": 35.9
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 57.7,
+          "valid": 57.7
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 57.7,
+          "valid": 57.7
+        }
+      ]
+    },
+    {
+      "name": "ACE",
+      "family": "U",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 13.0,
+          "valid": 13.0
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 32.7,
+          "valid": 32.7
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 25.0,
+          "valid": 25.0
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 32.7,
+          "valid": 32.7
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 43.7,
+          "valid": 43.7
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 19.2,
+          "valid": 19.2
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 26.2,
+          "valid": 26.2
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 13.4,
+          "valid": 13.4
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 23.6,
+          "valid": 23.6
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 74.3,
+          "valid": 74.3
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 32.1,
+          "valid": 32.1
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 60.3,
+          "valid": 60.3
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 50.0,
+          "valid": 50.0
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 61.5,
+          "valid": 61.5
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 70.5,
+          "valid": 70.5
+        }
+      ]
+    },
+    {
+      "name": "MCE",
+      "family": "U",
+      "cells": [
+        {
+          "arena": "statebench",
+          "model": "Q4",
+          "official": 13.0,
+          "valid": 13.0
+        },
+        {
+          "arena": "statebench",
+          "model": "G12",
+          "official": 33.3,
+          "valid": 33.3
+        },
+        {
+          "arena": "statebench",
+          "model": "O20",
+          "official": 22.0,
+          "valid": 22.0
+        },
+        {
+          "arena": "statebench",
+          "model": "Q27",
+          "official": 33.3,
+          "valid": 33.3
+        },
+        {
+          "arena": "statebench",
+          "model": "DS",
+          "official": 47.0,
+          "valid": 47.0
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q4",
+          "official": 21.5,
+          "valid": 21.5
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "G12",
+          "official": 26.3,
+          "valid": 26.3
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "O20",
+          "official": 14.0,
+          "valid": 14.0
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "Q27",
+          "official": 25.0,
+          "valid": 25.0
+        },
+        {
+          "arena": "toolsandbox",
+          "model": "DS",
+          "official": 74.6,
+          "valid": 74.6
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q4",
+          "official": 30.8,
+          "valid": 30.8
+        },
+        {
+          "arena": "tooltalk",
+          "model": "G12",
+          "official": 56.4,
+          "valid": 56.4
+        },
+        {
+          "arena": "tooltalk",
+          "model": "O20",
+          "official": 47.4,
+          "valid": 47.4
+        },
+        {
+          "arena": "tooltalk",
+          "model": "Q27",
+          "official": 60.3,
+          "valid": 60.3
+        },
+        {
+          "arena": "tooltalk",
+          "model": "DS",
+          "official": 64.1,
+          "valid": 64.1
+        }
+      ]
+    }
+  ]
+}

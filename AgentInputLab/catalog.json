@@ -1,0 +1,1171 @@
+{
+  "schema": "agentinputlab.website.public-package-catalog.v1",
+  "version": "0.1.0a14",
+  "wheel_sha256": "ab1ce9e68936eceaec0932e78151b7c8e2cc91b1a931d6c231f3dfd34837bfcc",
+  "methods": [
+    {
+      "id": "rewrite.query2doc",
+      "name": "Query2doc",
+      "family": "reformulate",
+      "title": "Query2doc: Query Expansion with Large Language Models",
+      "paper_url": "https://aclanthology.org/2023.emnlp-main.585/",
+      "upstream_url": "https://github.com/ls3-lab/QueryGym",
+      "in_paper": true,
+      "profiles": [
+        {
+          "id": "rewrite.query2doc.official_cached",
+          "status": "experimental"
+        },
+        {
+          "id": "rewrite.query2doc.querygym_live",
+          "status": "experimental"
+        },
+        {
+          "id": "rewrite.query2doc.controlled_live",
+          "status": "experimental"
+        }
+      ]
+    },
+    {
+      "id": "rewrite.rrr",
+      "name": "Rewrite-Retrieve-Read",
+      "family": "reformulate",
+      "title": "Query Rewriting in Retrieval-Augmented Large Language Models",
+      "paper_url": "https://aclanthology.org/2023.emnlp-main.322/",
+      "upstream_url": "https://github.com/xbmxb/RAG-query-rewriting",
+      "in_paper": true,
+      "profiles": [
+        {
+          "id": "rewrite.rrr.common_support_prompt",
+          "status": "experimental"
+        },
+        {
+          "id": "rewrite.rrr.prompt_external",
+          "status": "external_only"
+        },
+        {
+          "id": "rewrite.rrr.warmup_external",
+          "status": "external_only"
+        },
+        {
+          "id": "rewrite.rrr.ppo_external",
+          "status": "external_only"
+        }
+      ]
+    },
+    {
+      "id": "rewrite.reformer",
+      "name": "ReFormeR",
+      "family": "reformulate",
+      "title": "ReFormeR: Learning and Applying Explicit Query Reformulation Patterns",
+      "paper_url": "https://link.springer.com/chapter/10.1007/978-3-032-21300-6_30",
+      "upstream_url": "https://github.com/aminbigdeli/ReFormeR",
+      "in_paper": true,
+      "profiles": [
+        {
+          "id": "rewrite.reformer.repo_native_r_only",
+          "status": "external_only"
+        },
+        {
+          "id": "rewrite.reformer.paper_spec_q_concat_r",
+          "status": "external_only"
+        },
+        {
+          "id": "rewrite.reformer.controlled_r_only",
+          "status": "external_only"
+        },
+        {
+          "id": "rewrite.reformer.controlled_q_concat_r",
+          "status": "external_only"
+        },
+        {
+          "id": "training.reformer.pattern_induction",
+          "status": "experimental"
+        }
+      ]
+    },
+    {
+      "id": "rewrite.infocqr",
+      "name": "InfoCQR",
+      "family": "reformulate",
+      "title": "Enhancing Conversational Search: Large Language Model-Aided Informative Query Rewriting",
+      "paper_url": "https://aclanthology.org/2023.findings-emnlp.398/",
+      "upstream_url": "https://github.com/smartyfh/InfoCQR",
+      "in_paper": true,
+      "profiles": [
+        {
+          "id": "rewrite.infocqr.cached_rw_zsl",
+          "status": "planned"
+        },
+        {
+          "id": "rewrite.infocqr.cached_rw_fsl",
+          "status": "planned"
+        },
+        {
+          "id": "rewrite.infocqr.cached_edit",
+          "status": "planned"
+        },
+        {
+          "id": "rewrite.infocqr.live_teacher_external",
+          "status": "external_only"
+        },
+        {
+          "id": "rewrite.infocqr.common_support_rw_zsl",
+          "status": "external_only"
+        },
+        {
+          "id": "rewrite.infocqr.t5_student_external",
+          "status": "external_only"
+        }
+      ]
+    },
+    {
+      "id": "plan.plan_and_solve",
+      "name": "Plan-and-Solve",
+      "family": "decompose",
+      "title": "Plan-and-Solve Prompting: Improving Zero-Shot Chain-of-Thought Reasoning by Large Language Models",
+      "paper_url": "https://aclanthology.org/2023.acl-long.147/",
+      "upstream_url": "https://github.com/AGI-Edgerunners/Plan-and-Solve-Prompting",
+      "in_paper": true,
+      "profiles": [
+        {
+          "id": "plan.plan_and_solve.ps_prompt",
+          "status": "experimental"
+        },
+        {
+          "id": "plan.plan_and_solve.ps_plus_prompt",
+          "status": "experimental"
+        },
+        {
+          "id": "plan.plan_and_solve.plan_component",
+          "status": "experimental"
+        }
+      ]
+    },
+    {
+      "id": "plan.decomp",
+      "name": "Decomposed Prompting",
+      "family": "decompose",
+      "title": "Decomposed Prompting: A Modular Approach for Solving Complex Tasks",
+      "paper_url": "https://openreview.net/forum?id=_nGgzQjzaRy",
+      "upstream_url": "https://github.com/allenai/DecomP",
+      "in_paper": true,
+      "profiles": [
+        {
+          "id": "plan.decomp.common_support_odqa",
+          "status": "experimental"
+        },
+        {
+          "id": "plan.decomp.full",
+          "status": "external_only"
+        },
+        {
+          "id": "plan.decomp.planner_component",
+          "status": "experimental"
+        }
+      ]
+    },
+    {
+      "id": "plan.self_ask",
+      "name": "Self-Ask",
+      "family": "decompose",
+      "title": "Measuring and Narrowing the Compositionality Gap in Language Models",
+      "paper_url": "https://aclanthology.org/2023.findings-emnlp.378/",
+      "upstream_url": "https://github.com/ofirpress/self-ask",
+      "in_paper": true,
+      "profiles": [
+        {
+          "id": "plan.self_ask.full_loop",
+          "status": "experimental"
+        },
+        {
+          "id": "plan.self_ask.planner_component",
+          "status": "experimental"
+        }
+      ]
+    },
+    {
+      "id": "plan.llm_compiler",
+      "name": "LLMCompiler",
+      "family": "decompose",
+      "title": "An LLM Compiler for Parallel Function Calling",
+      "paper_url": "https://proceedings.mlr.press/v235/kim24y.html",
+      "upstream_url": "https://github.com/SqueezeAILab/LLMCompiler",
+      "in_paper": true,
+      "profiles": [
+        {
+          "id": "plan.llm_compiler.full",
+          "status": "external_only"
+        },
+        {
+          "id": "plan.llm_compiler.planner_component",
+          "status": "external_only"
+        },
+        {
+          "id": "plan.llm_compiler.common_support_planner",
+          "status": "experimental"
+        }
+      ]
+    },
+    {
+      "id": "plan.plan_and_budget",
+      "name": "Plan-and-Budget",
+      "family": "decompose",
+      "title": "Plan-and-Budget",
+      "paper_url": "https://arxiv.org/abs/2505.16122",
+      "upstream_url": "https://github.com/junhongmit/P-and-B",
+      "in_paper": true,
+      "profiles": [
+        {
+          "id": "plan.plan_and_budget.full",
+          "status": "experimental"
+        },
+        {
+          "id": "plan.plan_and_budget.decomposer_component",
+          "status": "experimental"
+        },
+        {
+          "id": "plan.plan_and_budget.native_cached_soft_budget",
+          "status": "experimental"
+        },
+        {
+          "id": "plan.plan_and_budget.native_regenerated_soft_budget",
+          "status": "experimental"
+        },
+        {
+          "id": "plan.plan_and_budget.hard_cap_extension",
+          "status": "experimental"
+        }
+      ]
+    },
+    {
+      "id": "acquire.hyde",
+      "name": "HyDE",
+      "family": "acquire",
+      "title": "Precise Zero-Shot Dense Retrieval without Relevance Labels",
+      "paper_url": "https://aclanthology.org/2023.acl-long.99/",
+      "upstream_url": "https://github.com/texttron/hyde",
+      "in_paper": false,
+      "profiles": [
+        {
+          "id": "acquire.hyde.paper_reimplementation",
+          "status": "experimental"
+        },
+        {
+          "id": "acquire.hyde.official_external_patched",
+          "status": "external_only"
+        },
+        {
+          "id": "acquire.hyde.controlled",
+          "status": "experimental"
+        }
+      ]
+    },
+    {
+      "id": "acquire.ircot",
+      "name": "IRCoT",
+      "family": "acquire",
+      "title": "Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions",
+      "paper_url": "https://aclanthology.org/2023.acl-long.557/",
+      "upstream_url": "https://github.com/StonyBrookNLP/ircot",
+      "in_paper": true,
+      "profiles": [
+        {
+          "id": "acquire.ircot.prediction_replay",
+          "status": "planned"
+        },
+        {
+          "id": "acquire.ircot.native_like_substituted",
+          "status": "planned"
+        },
+        {
+          "id": "acquire.ircot.controlled",
+          "status": "external_only"
+        },
+        {
+          "id": "acquire.ircot.common_support",
+          "status": "experimental"
+        }
+      ]
+    },
+    {
+      "id": "acquire.adaptive_rag",
+      "name": "Adaptive-RAG",
+      "family": "acquire",
+      "title": "Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language Models through Question Complexity",
+      "paper_url": "https://aclanthology.org/2024.naacl-long.389/",
+      "upstream_url": "https://github.com/starsuzi/Adaptive-RAG",
+      "in_paper": true,
+      "profiles": [
+        {
+          "id": "acquire.adaptive_rag.selector_replay",
+          "status": "planned"
+        },
+        {
+          "id": "acquire.adaptive_rag.rebuilt_offline",
+          "status": "retrain_required"
+        },
+        {
+          "id": "acquire.adaptive_rag.controlled_reimplementation",
+          "status": "external_only"
+        },
+        {
+          "id": "acquire.adaptive_rag.common_support",
+          "status": "experimental"
+        }
+      ]
+    },
+    {
+      "id": "acquire.r2ag",
+      "name": "R²AG",
+      "family": "acquire",
+      "title": "R²AG: Incorporating Retrieval Information into Retrieval Augmented Generation",
+      "paper_url": "https://aclanthology.org/2024.findings-emnlp.678/",
+      "upstream_url": "https://github.com/yefd/RRAG",
+      "in_paper": true,
+      "profiles": [
+        {
+          "id": "acquire.r2ag.official_retrained",
+          "status": "retrain_required"
+        },
+        {
+          "id": "acquire.r2ag.controlled_same_candidates",
+          "status": "retrain_required"
+        },
+        {
+          "id": "acquire.r2ag.common_support",
+          "status": "experimental"
+        }
+      ]
+    },
+    {
+      "id": "acquire.qrag",
+      "name": "Q-RAG",
+      "family": "acquire",
+      "title": "Q-RAG: Long Context Multi-Step Retrieval via Value-Based Embedder Training",
+      "paper_url": "https://openreview.net/forum?id=MS9nWFY7LG",
+      "upstream_url": "https://github.com/griver/Q-RAG",
+      "in_paper": true,
+      "profiles": [
+        {
+          "id": "acquire.qrag.released_checkpoint_native",
+          "status": "native_only"
+        },
+        {
+          "id": "acquire.qrag.reader_transfer_factorial",
+          "status": "external_only"
+        },
+        {
+          "id": "acquire.qrag.common_support",
+          "status": "experimental"
+        },
+        {
+          "id": "training.qrag.value_policy",
+          "status": "retrain_required"
+        }
+      ]
+    },
+    {
+      "id": "clarify.ask_or_assume",
+      "name": "Ask or Assume?",
+      "family": "clarify",
+      "title": "Ask or Assume? Uncertainty-Aware Clarification-Seeking in Coding Agents",
+      "paper_url": "https://arxiv.org/abs/2603.26233",
+      "upstream_url": "https://github.com/nedwards99/ask-or-assume",
+      "in_paper": true,
+      "profiles": [
+        {
+          "id": "clarify.ask_or_assume.openhands_full",
+          "status": "blocked"
+        },
+        {
+          "id": "clarify.ask_or_assume.intent_monitor_component",
+          "status": "external_only"
+        }
+      ]
+    },
+    {
+      "id": "clarify.udcs",
+      "name": "UDCS",
+      "family": "clarify",
+      "title": "Uncertainty Decomposition for Clarification Seeking in LLM Agents",
+      "paper_url": "https://arxiv.org/abs/2606.19559",
+      "upstream_url": "https://github.com/PE51K/udcs-in-llm-agents",
+      "in_paper": true,
+      "profiles": [
+        {
+          "id": "clarify.udcs.repo_native_prompt_route",
+          "status": "experimental"
+        },
+        {
+          "id": "clarify.udcs.paper_spec_deterministic_route",
+          "status": "experimental"
+        }
+      ]
+    },
+    {
+      "id": "clarify.future_turns",
+      "name": "Future-Turn Clarification",
+      "family": "clarify",
+      "title": "Modeling Future Conversation Turns to Teach LLMs to Ask Clarifying Questions",
+      "paper_url": "https://openreview.net/forum?id=cwuSAR7EKd",
+      "upstream_url": "https://github.com/mikejqzhang/clarifying_questions",
+      "in_paper": false,
+      "profiles": [
+        {
+          "id": "clarify.future_turns.future_outcome_match",
+          "status": "experimental"
+        }
+      ]
+    },
+    {
+      "id": "clarify.active_task_disambiguation",
+      "name": "Active Task Disambiguation",
+      "family": "clarify",
+      "title": "Active Task Disambiguation with LLMs",
+      "paper_url": "https://openreview.net/forum?id=JAMxRSXLFz",
+      "upstream_url": "https://github.com/kasia-kobalczyk/active-task-disambiguation",
+      "in_paper": true,
+      "profiles": [
+        {
+          "id": "clarify.active_task_disambiguation.eig_uniform",
+          "status": "experimental"
+        }
+      ]
+    },
+    {
+      "id": "curate.longllmlingua",
+      "name": "LongLLMLingua",
+      "family": "curate",
+      "title": "LongLLMLingua: Accelerating and Enhancing LLMs in Long Context Scenarios via Prompt Compression",
+      "paper_url": "https://aclanthology.org/2024.acl-long.91/",
+      "upstream_url": "https://github.com/microsoft/LLMLingua",
+      "in_paper": true,
+      "profiles": [
+        {
+          "id": "curate.longllmlingua.official",
+          "status": "experimental"
+        },
+        {
+          "id": "curate.longllmlingua.controlled",
+          "status": "experimental"
+        }
+      ]
+    },
+    {
+      "id": "curate.llmlingua2",
+      "name": "LLMLingua-2",
+      "family": "curate",
+      "title": "LLMLingua-2: Data Distillation for Efficient and Faithful Task-Agnostic Prompt Compression",
+      "paper_url": "https://aclanthology.org/2024.findings-acl.57/",
+      "upstream_url": "https://github.com/microsoft/LLMLingua",
+      "in_paper": true,
+      "profiles": [
+        {
+          "id": "curate.llmlingua2.xlm_roberta_official",
+          "status": "experimental"
+        },
+        {
+          "id": "curate.llmlingua2.bert_multilingual_official",
+          "status": "experimental"
+        },
+        {
+          "id": "training.llmlingua2.distillation",
+          "status": "retrain_required"
+        }
+      ]
+    },
+    {
+      "id": "curate.recomp",
+      "name": "RECOMP",
+      "family": "curate",
+      "title": "RECOMP: Improving Retrieval-Augmented LMs with Compression and Selective Augmentation",
+      "paper_url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/bda88ed2892f5e61c9a9bf215c566913-Abstract-Conference.html",
+      "upstream_url": "https://github.com/carriex/recomp",
+      "in_paper": true,
+      "profiles": [
+        {
+          "id": "curate.recomp.extractive",
+          "status": "external_only"
+        },
+        {
+          "id": "curate.recomp.abstractive",
+          "status": "external_only"
+        },
+        {
+          "id": "curate.recomp.common_support_extractive",
+          "status": "experimental"
+        },
+        {
+          "id": "curate.recomp.selective",
+          "status": "external_only"
+        },
+        {
+          "id": "training.recomp.extractive",
+          "status": "blocked"
+        },
+        {
+          "id": "training.recomp.abstractive",
+          "status": "blocked"
+        }
+      ]
+    },
+    {
+      "id": "curate.acon",
+      "name": "ACON",
+      "family": "curate",
+      "title": "ACON",
+      "paper_url": "https://arxiv.org/abs/2510.00615",
+      "upstream_url": "https://github.com/microsoft/acon",
+      "in_paper": true,
+      "profiles": [
+        {
+          "id": "curate.acon.history_runtime",
+          "status": "external_only"
+        },
+        {
+          "id": "curate.acon.observation_runtime",
+          "status": "external_only"
+        },
+        {
+          "id": "curate.acon.common_support_observation",
+          "status": "experimental"
+        },
+        {
+          "id": "training.acon.guideline_optimization",
+          "status": "retrain_required"
+        }
+      ]
+    },
+    {
+      "id": "recipe.smartsearch",
+      "name": "SmartSearch",
+      "family": "reformulate",
+      "title": "SmartSearch: Process Reward-Guided Query Refinement for Search Agents",
+      "paper_url": "https://arxiv.org/abs/2601.04888",
+      "upstream_url": "https://github.com/RUC-NLPIR/SmartSearch",
+      "in_paper": false,
+      "profiles": [
+        {
+          "id": "rewrite.smartsearch.common_support_queries",
+          "status": "experimental"
+        },
+        {
+          "id": "recipe.smartsearch.frozen_3b_inference",
+          "status": "external_only"
+        },
+        {
+          "id": "training.smartsearch.sft_dpo_grpo",
+          "status": "retrain_required"
+        }
+      ]
+    },
+    {
+      "id": "recipe.rqrag",
+      "name": "RQ-RAG",
+      "family": "reformulate",
+      "title": "RQ-RAG: Learning to Refine Queries for Retrieval Augmented Generation",
+      "paper_url": "https://arxiv.org/abs/2404.00610",
+      "upstream_url": "https://github.com/chanchimin/RQ-RAG",
+      "in_paper": false,
+      "profiles": [
+        {
+          "id": "recipe.rqrag.released_7b_external",
+          "status": "blocked"
+        },
+        {
+          "id": "recipe.rqrag.method_tree_search",
+          "status": "experimental"
+        },
+        {
+          "id": "recipe.rqrag.common_support_queries",
+          "status": "experimental"
+        }
+      ]
+    },
+    {
+      "id": "recipe.ace",
+      "name": "ACE",
+      "family": "curate",
+      "title": "Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models",
+      "paper_url": "https://arxiv.org/abs/2510.04618",
+      "upstream_url": "https://github.com/ace-agent/ace",
+      "in_paper": true,
+      "profiles": [
+        {
+          "id": "recipe.ace.offline",
+          "status": "external_only"
+        },
+        {
+          "id": "recipe.ace.eval_only",
+          "status": "experimental"
+        },
+        {
+          "id": "recipe.ace.online_transductive",
+          "status": "retrain_required"
+        }
+      ]
+    },
+    {
+      "id": "recipe.mce",
+      "name": "MCE",
+      "family": "curate",
+      "title": "Meta Context Engineering via Agentic Skill Evolution",
+      "paper_url": "https://arxiv.org/abs/2601.21557",
+      "upstream_url": "https://github.com/metaevo-ai/meta-context-engineering",
+      "in_paper": true,
+      "profiles": [
+        {
+          "id": "recipe.mce.sandboxed_offline",
+          "status": "external_only"
+        },
+        {
+          "id": "recipe.mce.final_artifact_eval",
+          "status": "experimental"
+        },
+        {
+          "id": "recipe.mce.text_artifact_eval",
+          "status": "experimental"
+        }
+      ]
+    },
+    {
+      "id": "recipe.skillopt",
+      "name": "SkillOpt",
+      "family": "curate",
+      "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
+      "paper_url": "https://arxiv.org/abs/2605.23904",
+      "upstream_url": "https://github.com/microsoft/SkillOpt",
+      "in_paper": true,
+      "profiles": [
+        {
+          "id": "recipe.skillopt.offline",
+          "status": "external_only"
+        },
+        {
+          "id": "recipe.skillopt.eval_only",
+          "status": "experimental"
+        }
+      ]
+    }
+  ],
+  "benchmarks": [
+    {
+      "id": "tooltalk.full",
+      "suite": "ToolTalk",
+      "task": "official easy and tooltalk conversations",
+      "size": "78 conversations: 28 easy and 50 tooltalk",
+      "metrics": [
+        "official_success",
+        "precision",
+        "recall",
+        "action_precision",
+        "bad_action_rate",
+        "soft_success",
+        "adapter_hard_stops"
+      ],
+      "families": [
+        "reformulate",
+        "decompose",
+        "acquire",
+        "clarify",
+        "curate"
+      ],
+      "paused": false
+    },
+    {
+      "id": "beir.arguana",
+      "suite": "BEIR",
+      "task": "ArguAna",
+      "size": "1406 queries; ~8.67K documents",
+      "metrics": [
+        "ndcg_at_10",
+        "recall"
+      ],
+      "families": [
+        "reformulate",
+        "acquire",
+        "curate"
+      ],
+      "paused": false
+    },
+    {
+      "id": "beir.cqadupstack",
+      "suite": "BEIR",
+      "task": "CQADupStack",
+      "size": "13145 queries; ~457K documents; 12 subforums",
+      "metrics": [
+        "ndcg_at_10",
+        "recall"
+      ],
+      "families": [
+        "reformulate",
+        "acquire"
+      ],
+      "paused": false
+    },
+    {
+      "id": "beir.quora",
+      "suite": "BEIR",
+      "task": "Quora duplicate-question retrieval",
+      "size": "suite-defined",
+      "metrics": [
+        "ndcg_at_10",
+        "recall"
+      ],
+      "families": [
+        "reformulate",
+        "acquire"
+      ],
+      "paused": false
+    },
+    {
+      "id": "beir.dbpedia_entity",
+      "suite": "BEIR",
+      "task": "DBPedia-Entity",
+      "size": "400 queries; ~4.63M documents",
+      "metrics": [
+        "ndcg_at_10",
+        "recall"
+      ],
+      "families": [
+        "reformulate",
+        "acquire"
+      ],
+      "paused": false
+    },
+    {
+      "id": "beir.fever",
+      "suite": "BEIR",
+      "task": "FEVER evidence retrieval",
+      "size": "suite-defined",
+      "metrics": [
+        "ndcg_at_10",
+        "recall"
+      ],
+      "families": [
+        "reformulate",
+        "acquire"
+      ],
+      "paused": false
+    },
+    {
+      "id": "beir.fiqa_2018",
+      "suite": "BEIR",
+      "task": "FiQA-2018",
+      "size": "648 queries; ~57K documents",
+      "metrics": [
+        "ndcg_at_10",
+        "recall"
+      ],
+      "families": [
+        "reformulate",
+        "acquire"
+      ],
+      "paused": false
+    },
+    {
+      "id": "bright.earth_science",
+      "suite": "BRIGHT",
+      "task": "Earth Science",
+      "size": "116 queries; 121249 documents",
+      "metrics": [
+        "ndcg_at_10",
+        "recall"
+      ],
+      "families": [
+        "reformulate",
+        "acquire",
+        "curate"
+      ],
+      "paused": false
+    },
+    {
+      "id": "bright.economics",
+      "suite": "BRIGHT",
+      "task": "Economics",
+      "size": "103 queries; 50220 documents",
+      "metrics": [
+        "ndcg_at_10",
+        "recall"
+      ],
+      "families": [
+        "reformulate",
+        "acquire",
+        "curate"
+      ],
+      "paused": false
+    },
+    {
+      "id": "bright.robotics",
+      "suite": "BRIGHT",
+      "task": "Robotics",
+      "size": "domain subset of 1398 total queries",
+      "metrics": [
+        "ndcg_at_10",
+        "recall"
+      ],
+      "families": [
+        "reformulate",
+        "acquire",
+        "decompose"
+      ],
+      "paused": false
+    },
+    {
+      "id": "bright.stackoverflow",
+      "suite": "BRIGHT",
+      "task": "StackOverflow",
+      "size": "domain subset of 1398 total queries",
+      "metrics": [
+        "ndcg_at_10",
+        "recall"
+      ],
+      "families": [
+        "reformulate",
+        "acquire",
+        "decompose"
+      ],
+      "paused": false
+    },
+    {
+      "id": "trec_dl.2019",
+      "suite": "TREC Deep Learning",
+      "task": "Passage ranking 2019",
+      "size": "43 judged queries; 8.84M MS MARCO passages",
+      "metrics": [
+        "ndcg",
+        "map",
+        "recall"
+      ],
+      "families": [
+        "reformulate",
+        "acquire"
+      ],
+      "paused": false
+    },
+    {
+      "id": "trec_dl.2020",
+      "suite": "TREC Deep Learning",
+      "task": "Passage ranking 2020",
+      "size": "54 judged queries; 8.84M MS MARCO passages",
+      "metrics": [
+        "ndcg",
+        "map",
+        "recall"
+      ],
+      "families": [
+        "reformulate",
+        "acquire"
+      ],
+      "paused": false
+    },
+    {
+      "id": "musique.answerable",
+      "suite": "MuSiQue",
+      "task": "2-4 hop answerable QA",
+      "size": "2417 answerable dev questions; 24814 total; 20 paragraphs each",
+      "metrics": [
+        "answer_f1",
+        "support_f1"
+      ],
+      "families": [
+        "decompose",
+        "acquire",
+        "curate"
+      ],
+      "paused": false
+    },
+    {
+      "id": "2wiki.multihop",
+      "suite": "2WikiMultiHopQA",
+      "task": "2-hop Wikipedia QA",
+      "size": "12576 dev questions; official data_ids_april7 release",
+      "metrics": [
+        "answer_f1",
+        "support_f1",
+        "evidence_f1",
+        "joint_f1"
+      ],
+      "families": [
+        "decompose",
+        "acquire",
+        "curate"
+      ],
+      "paused": false
+    },
+    {
+      "id": "hotpotqa.distractor",
+      "suite": "HotpotQA",
+      "task": "2-hop QA with supporting facts",
+      "size": "7405 validation questions; distractor profile",
+      "metrics": [
+        "answer_f1",
+        "support_f1",
+        "joint_f1"
+      ],
+      "families": [
+        "decompose",
+        "acquire",
+        "curate"
+      ],
+      "paused": false
+    },
+    {
+      "id": "clariq.main",
+      "suite": "ClariQ",
+      "task": "Clarification need, question, response, and retrieval utility",
+      "size": "187 train topics; 50 development topics",
+      "metrics": [
+        "clarification_utility",
+        "intent_preservation",
+        "retrieval_utility"
+      ],
+      "families": [
+        "clarify",
+        "reformulate"
+      ],
+      "paused": true
+    },
+    {
+      "id": "qasper.v0_3_dev",
+      "suite": "QASPER",
+      "task": "Scientific-document QA with answer and evidence annotations",
+      "size": "281 dev papers; 1005 questions; 1764 annotations",
+      "metrics": [
+        "answer_f1",
+        "evidence_f1"
+      ],
+      "families": [
+        "curate",
+        "acquire"
+      ],
+      "paused": false
+    },
+    {
+      "id": "longbench.qasper",
+      "suite": "LongBench",
+      "task": "Qasper",
+      "size": "suite subset",
+      "metrics": [
+        "answer_f1"
+      ],
+      "families": [
+        "curate",
+        "acquire",
+        "decompose"
+      ],
+      "paused": false
+    },
+    {
+      "id": "longbench.multifieldqa_en",
+      "suite": "LongBench",
+      "task": "MultiFieldQA-en",
+      "size": "suite subset",
+      "metrics": [
+        "answer_f1"
+      ],
+      "families": [
+        "curate"
+      ],
+      "paused": false
+    },
+    {
+      "id": "longbench.govreport",
+      "suite": "LongBench",
+      "task": "GovReport",
+      "size": "suite subset",
+      "metrics": [
+        "rouge",
+        "constraint_preservation"
+      ],
+      "families": [
+        "curate"
+      ],
+      "paused": false
+    },
+    {
+      "id": "longbench.qmsum",
+      "suite": "LongBench",
+      "task": "QMSum",
+      "size": "suite subset",
+      "metrics": [
+        "rouge",
+        "query_fidelity"
+      ],
+      "families": [
+        "curate"
+      ],
+      "paused": false
+    },
+    {
+      "id": "longbench.passage_retrieval_en",
+      "suite": "LongBench",
+      "task": "PassageRetrieval-en",
+      "size": "suite subset",
+      "metrics": [
+        "passage_id_accuracy"
+      ],
+      "families": [
+        "curate",
+        "acquire"
+      ],
+      "paused": false
+    },
+    {
+      "id": "longbench.repobench_p",
+      "suite": "LongBench",
+      "task": "RepoBench-P",
+      "size": "suite subset",
+      "metrics": [
+        "exact_match",
+        "code_metric"
+      ],
+      "families": [
+        "curate",
+        "decompose"
+      ],
+      "paused": false
+    },
+    {
+      "id": "bfcl.v3.simple_python",
+      "suite": "BFCL v3",
+      "task": "non-live Python simple function calling",
+      "size": "400 official simple cases",
+      "metrics": [
+        "ast_accuracy"
+      ],
+      "families": [
+        "reformulate",
+        "decompose"
+      ],
+      "paused": false
+    },
+    {
+      "id": "tau3.banking_knowledge",
+      "suite": "tau3",
+      "task": "banking_knowledge",
+      "size": "97 tasks; 698 documents",
+      "metrics": [
+        "official_reward",
+        "cost",
+        "harm_rate",
+        "valid_success"
+      ],
+      "families": [
+        "reformulate",
+        "decompose",
+        "acquire",
+        "clarify",
+        "curate"
+      ],
+      "paused": false
+    },
+    {
+      "id": "tau3.retail",
+      "suite": "tau3",
+      "task": "retail",
+      "size": "114 official tasks; 74 train and 40 test",
+      "metrics": [
+        "official_reward",
+        "terminal_success",
+        "cost",
+        "harm_rate",
+        "valid_success"
+      ],
+      "families": [
+        "reformulate",
+        "decompose",
+        "clarify",
+        "curate"
+      ],
+      "paused": false
+    },
+    {
+      "id": "appworld_ul.common_support",
+      "suite": "AppWorld-UL",
+      "task": "user-in-the-loop cross-family checkpoint arena",
+      "size": "516 page-declared user-in-the-loop tasks; AppWorld runtime has 9 apps and 457 APIs",
+      "metrics": [
+        "task_success",
+        "cost",
+        "harm_rate",
+        "valid_success"
+      ],
+      "families": [
+        "reformulate",
+        "decompose",
+        "acquire",
+        "clarify",
+        "curate"
+      ],
+      "paused": true
+    },
+    {
+      "id": "state_bench.common_support",
+      "suite": "STATE-Bench",
+      "task": "stateful enterprise-agent cross-family checkpoint arena",
+      "size": "450 tasks; 150 each in travel, customer support, and shopping",
+      "metrics": [
+        "task_completion_pass",
+        "state_requirements_met",
+        "task_requirements_met",
+        "ux_score",
+        "cost_usd",
+        "turns",
+        "tool_calls",
+        "harm_rate",
+        "valid_success"
+      ],
+      "families": [
+        "reformulate",
+        "decompose",
+        "acquire",
+        "clarify",
+        "curate"
+      ],
+      "paused": false
+    },
+    {
+      "id": "toolsandbox.common_support",
+      "suite": "ToolSandbox",
+      "task": "stateful conversational cross-family checkpoint arena",
+      "size": "129 base scenarios; 1032 official source-generated tool variants",
+      "metrics": [
+        "milestone_similarity",
+        "minefield_similarity",
+        "official_similarity",
+        "turn_count",
+        "cost",
+        "harm_rate",
+        "valid_success"
+      ],
+      "families": [
+        "reformulate",
+        "decompose",
+        "acquire",
+        "clarify",
+        "curate"
+      ],
+      "paused": false
+    },
+    {
+      "id": "ale.external_transfer",
+      "suite": "Agents' Last Exam",
+      "task": "long-horizon professional computer-use external transfer",
+      "size": "1000+ paper tasks; approximately 150 public repository tasks across 55 subdomains",
+      "metrics": [
+        "task_score",
+        "cost_usd",
+        "wall_seconds"
+      ],
+      "families": [
+        "reformulate",
+        "decompose",
+        "acquire",
+        "curate"
+      ],
+      "paused": true
+    }
+  ]
+}
