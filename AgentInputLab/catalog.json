@@ -1,7 +1,7 @@
 {
   "schema": "agentinputlab.website.public-package-catalog.v1",
-  "version": "0.1.0a15",
-  "wheel_sha256": "cafe30523e1978fb5ccad469d8f49bddf7e90de3b7778fde0927d242c77c6fc9",
+  "version": "0.1.0a16",
+  "wheel_sha256": "8a812400855190e7d1270c07c2b91a34758bd18a52933a55d8b1b5fa3c1e762c",
   "methods": [
     {
       "id": "rewrite.query2doc",
